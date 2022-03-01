@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- external css link  -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- font awsesome link  -->
+    <script src="https://kit.fontawesome.com/01b882f6f7.js" crossorigin="anonymous"></script>
+    <title>PHONEOMONIA</title>
+</head>
+<body>
+    <!-- header starts here  -->
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light nav-color">
+            <div class="container p-5">
+              <a class="navbar-brand fs-4 fw-bolder fst-italic" href="#">PHONEOMONIA</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active fs-4 fw-bolder" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fs-4 fw-bolder" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fs-4 fw-bolder" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled fs-4 fw-bolder">Disabled</a>
+                  </li>
+                </ul>
+                <div class="d-flex">
+                    <input id="search-phone" class="form-control me-2" type="search" placeholder="Search Your Phone" aria-label="Search">
+                  <button onclick="searchPhone()" id="btn-search" class="btn btn-outline-success fs-4 fw-bolder" type="submit">Search</button>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <!-- main section starts here  -->
+    <main id="phone-container" class="container-fluid details-bg">
+        <section class="container mb-5 details-bg">
+            <div id="phone-details">
+
+            </div>
+        </section>
+      <section class="container mt-3 mb-3 details-bg">
+        <div id="details-container" class="">
+
+        </div>
+      </section>
+
+        <section class="container">
+            <!-- display search result -->
+
+                <p id="error-message" class="fs-1 fw-bolder text-danger text-center"><span class="error-clr">x</span> Results Not Found</p>
+
+            <div id="search-result" class="row row-cols-1 row-cols-md-3 g-5">
+
+              
+            </div>
+        </section>
+
+
+    </main>
+    <!-- external js link  -->
+    <script src="./js/index.js"></script>
+    <!-- bootstrap js link  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

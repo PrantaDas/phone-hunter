@@ -1,0 +1,16 @@
+*{
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.nav-color{
+    background-color: 	#00bfff;
+}
+.details-bg{
+    background-color: plum;
+}
+.error-clr{
+    color: red;
+}
+#error-message{
+    display: none;
+}
