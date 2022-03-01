@@ -1,5 +1,6 @@
 const searchPhone=()=>{
-    
+  const phoneDetails=document.getElementById('phone-details');
+  phoneDetails.innerHTML='';
     const searchField=document.getElementById('search-phone');
     const searchText=searchField.value;
     console.log(searchText);
@@ -15,7 +16,7 @@ const displaySearchResult=(phones)=>{
     const resultContainer=document.getElementById('search-result');
     resultContainer.innerHTML='';
     console.log(phones);
-    if(!phones){
+    if(phones.length==''){
         document.getElementById('error-message').style.display='block';
     }
     else{
